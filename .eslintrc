@@ -1,0 +1,11 @@
+{
+  "globals": {
+    "__DEV__": true,
+    "__SERVER__": true
+  },
+  "extends": "./dist/index.js",
+  "env": {
+    "jest": true
+  },
+  "rules": {}
+}
