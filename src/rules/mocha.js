@@ -1,8 +1,11 @@
 export default {
-  'env': {
-    'mocha': true
+  env: {
+    mocha: true
   },
-  'rules': {
+  plugins: [
+    'mocha'
+  ],
+  rules: {
     'mocha/no-exclusive-tests': 'error',
     'mocha/no-skipped-tests': 'error',
     'mocha/no-pending-tests': 'warn',

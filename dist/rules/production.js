@@ -4,8 +4,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  'rules': {
-    'no-console': 'error',
-    'no-debugger': 'error'
+  rules: {
+    'no-console': 'warn',
+    'no-debugger': 'warn'
   }
 };
+module.exports = exports['default'];

@@ -4,18 +4,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  'rules': {
+  rules: {
     // Enforce spacing inside array brackets.
     'array-bracket-spacing': ['error', 'never'],
 
     // Enforce one true brace style.
-    'brace-style': ['error', '1tbs', { 'allowSingleLine': true }],
+    'brace-style': ['error', '1tbs', {
+      'allowSingleLine': true
+    }],
 
     // Use camelcase for variable names. Ignore property names.
-    'camelcase': ['error', { 'properties': 'never' }],
+    'camelcase': ['error', {
+      'properties': 'never'
+    }],
 
     // Enforce spacing after comma.
-    'comma-spacing': ['error', { 'before': false, 'after': true }],
+    'comma-spacing': ['error', {
+      'before': false,
+      'after': true
+    }],
 
     // Enforces comma style. Requires that the comma be placed after and be in
     // the same line as the variable declaration, object property and array element.
@@ -28,10 +35,15 @@ exports.default = {
     'eol-last': 'error',
 
     // Indent using two spaces.
-    'indent': ['error', 2, { 'SwitchCase': 1 }],
+    'indent': ['error', 2, {
+      'SwitchCase': 1
+    }],
 
     // Enforce spacing between keys and values in object literal properties.
-    'key-spacing': ['error', { 'beforeColon': false, 'afterColon': true }],
+    'key-spacing': ['error', {
+      'beforeColon': false,
+      'afterColon': true
+    }],
 
     // The maximum depth that blocks can be nested.
     'max-depth': ['error', 4],
@@ -81,7 +93,10 @@ exports.default = {
     'semi': ['warn', 'never'],
 
     // Enforce spacing before and after semicolons.
-    'semi-spacing': ['error', { 'before': false, 'after': true }],
+    'semi-spacing': ['error', {
+      'before': false,
+      'after': true
+    }],
 
     // Require a space after certain keywords.
     'keyword-spacing': 'error',
@@ -96,7 +111,10 @@ exports.default = {
     'space-infix-ops': 'error',
 
     // Require spaces after word-based unary operators.
-    'space-unary-ops': ['error', { 'words': true, 'nonwords': false }],
+    'space-unary-ops': ['error', {
+      'words': true,
+      'nonwords': false
+    }],
 
     // Use single quotes for strings.
     'quotes': ['warn', 'single', 'avoid-escape'],
@@ -108,3 +126,4 @@ exports.default = {
     'object-shorthand': 'warn'
   }
 };
+module.exports = exports['default'];

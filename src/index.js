@@ -12,11 +12,7 @@ import Style from './rules/style'
 import Variables from './rules/variables'
 
 const baseConfig = {
-  'parser': 'babel-eslint',
-  'extends': [
-    'eslint:recommended'
-  ],
-  'env': {
+  env: {
     'browser': true,
     'node': true
   }
@@ -30,7 +26,8 @@ let config = [
   Strict,
   Style,
   Variables,
-  Promises
+  Promises,
+  Mocha
 ].reduce((prev, cur) => {
   return merge(prev, cur)
 }, baseConfig)

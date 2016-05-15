@@ -1,9 +1,13 @@
 export default {
-  'env': {
-    'es6': true
+  env: {
+    es6: true
   },
-  'parser': 'babel-eslint',
-  'rules': {
+  parser: 'babel-eslint',
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 7
+  },
+  rules: {
     // Require parens in arrow function arguments.
     'arrow-parens': 'error',
 

@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  'rules': {
+  rules: {
     // Disallow the catch clause parameter name being the same as a variable in the outer scope.
     'no-catch-shadow': 'error',
 
@@ -21,9 +21,13 @@ exports.default = {
     'no-undef-init': 'error',
 
     // Warn on unused variables.
-    'no-unused-vars': ['warn', { 'vars': 'all', 'args': 'after-used' }],
+    'no-unused-vars': ['warn', {
+      'vars': 'all',
+      'args': 'after-used'
+    }],
 
     // Error if variables are used before they are defined.
     'no-use-before-define': ['error', 'nofunc']
   }
 };
+module.exports = exports['default'];

@@ -1,8 +1,8 @@
 export default {
-  'plugins': [
+  plugins: [
     'promise'
   ],
-  'rules': {
+  rules: {
     'promise/param-names': 'warn',
     'promise/always-return': 'warn',
     'promise/catch-or-return': 'warn'

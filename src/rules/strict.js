@@ -1,5 +1,5 @@
 export default {
-  'rules': {
-    'strict': ['error', 'never']
+  rules: {
+    strict: ['error', 'never']
   }
 }

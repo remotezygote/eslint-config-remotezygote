@@ -20,6 +20,10 @@ var _es = require('./rules/es6');
 
 var _es2 = _interopRequireDefault(_es);
 
+var _mocha = require('./rules/mocha');
+
+var _mocha2 = _interopRequireDefault(_mocha);
+
 var _promises = require('./rules/promises');
 
 var _promises2 = _interopRequireDefault(_promises);
@@ -39,16 +43,15 @@ var _variables2 = _interopRequireDefault(_variables);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var baseConfig = {
-  'parser': 'babel-eslint',
-  'extends': ['eslint:recommended'],
   'env': {
     'browser': true,
     'node': true
   }
 };
 
-var config = [_bestPractices2.default, _errors2.default, _es2.default, _strict2.default, _style2.default, _variables2.default, _promises2.default].reduce(function (prev, cur) {
+var config = [_bestPractices2.default, _errors2.default, _es2.default, _strict2.default, _style2.default, _variables2.default, _promises2.default, _mocha2.default].reduce(function (prev, cur) {
   return (0, _deepmerge2.default)(prev, cur);
 }, baseConfig);
 
 exports.default = config;
+module.exports = exports['default'];

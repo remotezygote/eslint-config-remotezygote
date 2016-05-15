@@ -4,10 +4,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  'env': {
-    'mocha': true
+  env: {
+    mocha: true
   },
-  'rules': {
+  plugins: ['mocha'],
+  rules: {
     'mocha/no-exclusive-tests': 'error',
     'mocha/no-skipped-tests': 'error',
     'mocha/no-pending-tests': 'warn',
@@ -16,3 +17,4 @@ exports.default = {
     'mocha/no-global-tests': 'error'
   }
 };
+module.exports = exports['default'];
