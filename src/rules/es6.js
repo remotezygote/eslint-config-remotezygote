@@ -9,7 +9,7 @@ export default {
   },
   rules: {
     // Require parens in arrow function arguments.
-    'arrow-parens': 'error',
+    'arrow-parens': 'off',
 
     // Require space before/after arrow function's arrow.
     'arrow-spacing': 'error',
