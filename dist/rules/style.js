@@ -58,12 +58,12 @@ exports.default = {
     'no-new-object': 'error',
 
     // Warn on line length greater than 80 characters.
-    'max-len': ['warn', 80, 4, {
+    'max-len': ['warn', 120, 4, {
       'ignoreComments': true,
       'ignoreUrls': true,
 
       // Ignore imports and requires
-      'ignorePattern': '(^\\s*import.+;$)|(^\\s*let.+require.+;$)'
+      'ignorePattern': '(^\\s*(import|export).+;$)|(^\\s*let.+require.+;$)'
     }],
 
     // Require constructors to use initial caps.
