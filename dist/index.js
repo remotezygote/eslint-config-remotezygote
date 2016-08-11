@@ -51,7 +51,6 @@ var _variables2 = _interopRequireDefault(_variables);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var baseConfig = {
-  'parser': 'babel-eslint',
   'extends': ['eslint:recommended'],
   'env': {
     'browser': true,

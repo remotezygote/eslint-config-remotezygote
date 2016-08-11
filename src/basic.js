@@ -9,7 +9,6 @@ import Style from './rules/style'
 import Variables from './rules/variables'
 
 const baseConfig = {
-  'parser': 'babel-eslint',
   'extends': [
     'eslint:recommended'
   ],

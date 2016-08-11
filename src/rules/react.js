@@ -2,8 +2,11 @@ export default {
   'plugins': [
     'react'
   ],
-  'ecmaFeatures': {
-    'jsx': true
+  'parserOptions': {
+    'ecmaFeatures': {
+      'jsx': true,
+      'modules': true
+    }
   },
   'rules': {
     // Prevent missing displayName in a React component definition.
@@ -43,7 +46,7 @@ export default {
     'react/sort-prop-types': ['warn', { 'ignoreCase': true }],
 
     // Allow React var to be unused even when no-unused-vars is on
-    'react/jsx-uses-react': ['warn', {}],
+    'react/jsx-uses-react': 'warn',
 
     // Enforce component methods order.
     'react/sort-comp': ['warn', {
