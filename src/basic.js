@@ -3,15 +3,13 @@ import merge from 'deepmerge'
 import BestPractices from './rules/best-practices'
 import Errors from './rules/errors'
 import ES6 from './rules/es6'
+import Mocha from './rules/mocha'
 import Promises from './rules/promises'
 import Strict from './rules/strict'
 import Style from './rules/style'
 import Variables from './rules/variables'
 
 const baseConfig = {
-  'extends': [
-    'eslint:recommended'
-  ],
   'env': {
     'browser': true,
     'node': true
@@ -25,7 +23,8 @@ const config = [
   Strict,
   Style,
   Variables,
-  Promises
+  Promises,
+  Mocha
 ].reduce((prev, cur) => {
   return merge(prev, cur)
 }, baseConfig)

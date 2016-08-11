@@ -1,5 +1,5 @@
 export default {
-  'rules': {
+  rules: {
     // Disallow trailing commas.
     'comma-dangle': 'error',
 

@@ -1,6 +1,6 @@
 export default {
-  'rules': {
-    'no-console': 'error',
-    'no-debugger': 'error'
+  rules: {
+    'no-console': 'warn',
+    'no-debugger': 'warn'
   }
 }

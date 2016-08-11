@@ -4,7 +4,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  'rules': {
+  extends: ['eslint:recommended'],
+  rules: {
     // Do not require all methods to return a value.
     'consistent-return': 'off',
 
@@ -12,7 +13,9 @@ exports.default = {
     'curly': ['error', 'all'],
 
     // Encourages use of dot notation whenever possible.
-    'dot-notation': ['error', { 'allowKeywords': true }],
+    'dot-notation': ['error', {
+      'allowKeywords': true
+    }],
 
     // Enforces consistent newlines after dots.
     'dot-location': ['error', 'property'],

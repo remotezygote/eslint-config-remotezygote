@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  'rules': {
+  rules: {
     // Disallow trailing commas.
     'comma-dangle': 'error',
 

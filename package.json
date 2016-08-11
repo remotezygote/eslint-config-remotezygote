@@ -5,12 +5,14 @@
   "main": "dist/index.js",
   "author": "John Bragg",
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remotezygote/eslint-config-remotezygote.git"
+  },
   "scripts": {
     "compile": "rm -rf dist && babel src --out-dir dist",
     "config": "npm run compile && eslint --print-config test/test.js",
     "test": "npm run compile && eslint test/test.js",
-    "updates": "ncu",
-    "updates:apply": "ncu -u",
     "2npm": "publish",
     "prepublish": "npm run compile"
   },
@@ -38,7 +40,6 @@
     "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-react": "^6.0.0",
     "eslint-plugin-mocha": "^4.3.0",
-    "npm-check-updates": "^2.6.3",
     "publish": "^0.6.0"
   }
 }

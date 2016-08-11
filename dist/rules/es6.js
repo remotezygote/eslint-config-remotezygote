@@ -4,13 +4,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  'env': {
-    'es6': true
+  env: {
+    es6: true
   },
-  'parser': 'babel-eslint',
-  'rules': {
+  parser: 'babel-eslint',
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 7
+  },
+  rules: {
     // Require parens in arrow function arguments.
-    'arrow-parens': 'error',
+    'arrow-parens': 'off',
 
     // Require space before/after arrow function's arrow.
     'arrow-spacing': 'error',

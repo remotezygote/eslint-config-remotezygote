@@ -4,17 +4,20 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  'plugins': ['react'],
-  'parserOptions': {
-    'ecmaFeatures': {
-      'jsx': true,
-      'modules': true
+  plugins: ['react'],
+  extends: ['plugin:react/recommended'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+      modules: true
     }
   },
-  'rules': {
+  rules: {
     // Prevent missing displayName in a React component definition.
     // Also accepts name automatically assigned by transpiler.
-    'react/display-name': ['warn', { 'ignoreTranspilerName': false }],
+    'react/display-name': ['warn', {
+      'ignoreTranspilerName': false
+    }],
 
     'react/jsx-uses-vars': 'error',
 
@@ -31,7 +34,9 @@ exports.default = {
     'react/jsx-indent-props': ['warn', 2],
 
     // Maximum of 2 props per line.
-    'react/jsx-max-props-per-line': ['warn', { 'maximum': 2 }],
+    'react/jsx-max-props-per-line': ['warn', {
+      'maximum': 2
+    }],
 
     // Prevent duplicate props in JSX.
     'react/jsx-no-duplicate-props': 'error',
@@ -46,7 +51,9 @@ exports.default = {
     'react/prop-types': 'warn',
 
     // Enforce propTypes declarations alphabetical sorting.
-    'react/sort-prop-types': ['warn', { 'ignoreCase': true }],
+    'react/sort-prop-types': ['warn', {
+      'ignoreCase': true
+    }],
 
     // Allow React var to be unused even when no-unused-vars is on
     'react/jsx-uses-react': 'warn',

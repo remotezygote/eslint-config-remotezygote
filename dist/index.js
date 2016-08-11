@@ -51,14 +51,13 @@ var _variables2 = _interopRequireDefault(_variables);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var baseConfig = {
-  'extends': ['eslint:recommended'],
-  'env': {
+  env: {
     'browser': true,
     'node': true
   }
 };
 
-var config = [_bestPractices2.default, _errors2.default, _es2.default, _react2.default, _strict2.default, _style2.default, _variables2.default, _promises2.default].reduce(function (prev, cur) {
+var config = [_bestPractices2.default, _errors2.default, _es2.default, _react2.default, _strict2.default, _style2.default, _variables2.default, _promises2.default, _mocha2.default].reduce(function (prev, cur) {
   return (0, _deepmerge2.default)(prev, cur);
 }, baseConfig);
 
