@@ -1,5 +1,5 @@
 {
-  "name": "@remotezygote/eslint-config-remotezygote",
+  "name": "@remotezygote/eslintrc",
   "version": "1.1.2",
   "description": "John's eslint rules and settings.",
   "main": "dist/index.js",
